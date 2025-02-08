@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Social Media Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-<header>
     <h1>Welcome to Our Social Media Website</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="pages/about/AboutUs.html">About Us</a>
-        <a href="pages/search/search.html">Search</a>
-        <a href="pages/account/Account.html">Account</a>
-        <a href="Reviews.html">Reviews</a>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../WEB268Group1/index.html">Home</a></li>
+    
+                <li class="dropdown">
+                    <a class="dropbtn" a href="../WEB268Group1/pages/About/AboutUs.html">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pages/About/SubPagesAbout/AboutTheTeam.html">About the Team</a></li>
+                        <li><a href="pages/About/SubPagesAbout/Contribute.html">Contribute</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a class="dropbtn" a href="pages/Search/search.html">Search</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pages/Search/SubPagesSearch/Business1.html">Business 1</a></li>
+                        <li><a href="pages/Search/SubPagesSearch/Business2.html">Business 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropbtn" href="pages/Account/account.html">Account</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pages/Account/SubPagesAccount/Login.html">Login</a></li>
+                        <li><a href="pages/Account/SubPagesAccount/SignUp.html">Sign Up</a></li>
+                    </ul>
+                </li>
+    
+                <li><a href="pages/reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>    
 
 <main>
     <h2>Connecting People Around the World</h2>

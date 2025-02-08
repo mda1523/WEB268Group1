@@ -1,0 +1,98 @@
+/* General Website Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0C2F3A; /* Dark background */
+    color: white; /* White text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navbar Styles */
+header {
+    background-color: #1F677F; /* Dark blue-green for header */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1F677F; /* Dark blue-green for navbar */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    background-color: #4FC2D7; /* Light blue for navigation links */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #00DCFF; /* Bright cyan on hover */
+    color: #0C2F3A; /* Dark background color for text when hovered */
+}
+
+/* Dropdown Menu Styles */
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F677F; /* Dark blue-green for dropdown */
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+}
+
+nav ul li .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #00DCFF;
+    color: #0C2F3A;
+}
+
+/* Make dropdowns work on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul li .dropdown-content {
+        position: static;
+        min-width: 100%;
+    }
+}
