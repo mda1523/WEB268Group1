@@ -1,6 +1,7 @@
+/* General Website Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0C2F3A; 
+    background-color: #0c2f3a; 
     color: white; 
     margin: 0;
     padding: 0;
@@ -8,17 +9,11 @@ body {
 
 h1, h2, h3 {
     color: #4FEDC2; 
+    text-align: center;
 }
 
-a {
-    color: #00DCFF; 
-    text-decoration: none;
-}
 
-a:hover {
-    color: #4FC2D7; 
-}
-
+/* Header Styles */
 header {
     background-color: #1F677F; 
     padding: 20px;
@@ -35,19 +30,6 @@ header {
     color: #4FEDC2; 
 }
 
-.about, .search, .account, .reviews {
-    background-color: #0C2F3A; 
-    color: white; 
-    padding: 20px;
-}
-
-.about a, .search a, .account a, .reviews a {
-    color: #00DCFF; /
-}
-
-.about a:hover, .search a:hover, .account a:hover, .reviews a:hover {
-    color: #4FC2D7; 
-}
 
 footer {
     background-color: #1F677F;
@@ -69,4 +51,8 @@ footer {
     h1, h2 {
         font-size: 22px;
     }
+}
+
+.form {
+    text-align: center;
 }

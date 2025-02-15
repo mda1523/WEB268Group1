@@ -1,98 +1,72 @@
-/* General Website Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0C2F3A; /* Dark background */
-    color: white; /* White text for readability */
-    margin: 0;
-    padding: 0;
+/*dropdown menu color and alignment */
+.dropdown-menu {
+  background-color: #4FC2D7;
+  text-align: center;
 }
 
-/* Header and Navbar Styles */
-header {
-    background-color: #1F677F; /* Dark blue-green for header */
-    padding: 20px;
-    text-align: center;
+/*dropdown menu text color*/
+.dropdown-item {
+    color: black;
 }
 
-/* Navigation Bar Styles */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #1F677F; /* Dark blue-green for navbar */
-    text-align: center;
-    display: flex;
-    justify-content: center;
+/*Website name controls*/
+.navbar .navbar-brand {
+  color: white;
+  padding-top: 10px;
+
+}
+/*what color the hover button is*/
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #4FC2D7;
 }
 
-nav ul li {
+
+/*Centers Links*/
+.navbar-nav {
+    float: none;
+    margin: 0 auto;  
     position: relative;
-    margin-right: 20px;
+    left: -135px; /* the width of the .navbar-brand class in negative px */
+    padding-top: 10px;
 }
 
-nav ul li a {
-    font-size: 18px;
-    color: white;
-    padding: 10px 20px;
+/*Background color of navbar*/
+.navbar {
+    background-color: #1F677F;
+}
+
+/*makes the dropdown menu a block shape*/
+.dropdown:hover>.dropdown-menu {
     display: block;
-    background-color: #4FC2D7; /* Light blue for navigation links */
-    border-radius: 5px;
-    text-decoration: none;
+  }
+
+  /*Navbar link text color and position*/
+.navbar .navbar-nav .nav-link {
+  color: white;
+  border-radius: .25rem;
+  margin: 0 0.25em;
 }
 
-nav ul li a:hover {
-    background-color: #00DCFF; /* Bright cyan on hover */
-    color: #0C2F3A; /* Dark background color for text when hovered */
+
+/* controls highlighting active tab*/
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: black;
+  background-color: #4FC2D7;
 }
 
-/* Dropdown Menu Styles */
-nav ul li.dropdown:hover .dropdown-content {
-    display: block;
+/*Hover text color*/
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black !important;
+    background-color: #4FC2D7;
 }
 
-nav ul li .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1F677F; /* Dark blue-green for dropdown */
-    min-width: 160px;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
 
-nav ul li .dropdown-content li {
-    display: block;
-}
 
-nav ul li .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-    text-align: left;
-}
 
-nav ul li .dropdown-content a:hover {
-    background-color: #00DCFF;
-    color: #0C2F3A;
-}
-
-/* Make dropdowns work on smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    nav ul li .dropdown-content {
-        position: static;
-        min-width: 100%;
-    }
-}
