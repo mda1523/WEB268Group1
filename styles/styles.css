@@ -1,12 +1,23 @@
+/* General Website Styles */
 /* ------------------- Body Section ------------------- */
 body {
     font-family: Arial, sans-serif;
+    background-color: #0c2f3a; 
     background-color: #0C2F3A;
     color: white; 
     margin: 0;
     padding: 0;
 }
 
+h1, h2, h3 {
+    color: #4FEDC2; 
+    text-align: center;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #1F677F; 
 /* ------------------- Scrolling Images Section ------------------- */
 .scrolling-images {
     display: flex;
@@ -53,6 +64,8 @@ main {
 
 .inner-box h2 {
     color: #4FEDC2; 
+}
+
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center; 
@@ -156,4 +169,8 @@ main {
     .image img {
         max-width: 100%; 
     }
+}
+
+.form {
+    text-align: center;
 }
