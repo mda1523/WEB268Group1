@@ -1,72 +1,159 @@
+/* ------------------- Body Section ------------------- */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0C2F3A; 
+    background-color: #0C2F3A;
     color: white; 
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
-    color: #4FEDC2; 
+/* ------------------- Scrolling Images Section ------------------- */
+.scrolling-images {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 50px; 
 }
 
-a {
-    color: #00DCFF; 
-    text-decoration: none;
+.scrolling-images img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    scroll-snap-align: center;
+    margin-right: 20px;
 }
 
-a:hover {
-    color: #4FC2D7; 
-}
-
-header {
-    background-color: #1F677F; 
+/* ------------------- Main Section ------------------- */
+main {
     padding: 20px;
     text-align: center;
+    margin-top: 60px; 
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+/* ------------------- Full Width Box Section ------------------- */
+.full-width-box {
+    background: rgba(255, 255, 255, 0.1); 
+    width: 100%; 
+    padding: 50px 0; 
+    display: flex;
+    justify-content: center; 
 }
 
-.container h2 {
+.inner-box {
+    background: rgba(255, 255, 255, 0.2); 
+    margin: 0 auto; 
+    padding: 30px;
+    max-width: 1000px; 
+    width: 90%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.inner-box h2 {
     color: #4FEDC2; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center; 
 }
 
-.about, .search, .account, .reviews {
-    background-color: #0C2F3A; 
-    color: white; 
-    padding: 20px;
-}
-
-.about a, .search a, .account a, .reviews a {
-    color: #00DCFF; /
-}
-
-.about a:hover, .search a:hover, .account a:hover, .reviews a:hover {
-    color: #4FC2D7; 
-}
-
-footer {
-    background-color: #1F677F;
-    text-align: center;
-    padding: 20px;
+/* Text Inside Inner Box */
+.inner-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
     color: white;
-    margin-top: 30px;
+    text-align: center;
+}
+
+.full-width-box {
+    padding: 60px 0; 
+    background: rgba(255, 255, 255, 0.1); 
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
+    .inner-box {
+        padding: 20px;
     }
 
-    header {
-        padding: 15px;
+    .inner-box h2 {
+        font-size: 2em; 
     }
 
-    h1, h2 {
-        font-size: 22px;
+    .inner-box p {
+        font-size: 1em; 
+    }
+}
+
+/* ------------------- New Section Styles ------------------- */
+.additional-section {
+    width: 100%; 
+    background-color: #2A4D6D; 
+    padding: 60px 0; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.content-with-image {
+    width: 80%; 
+    max-width: 1200px; 
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 15px; 
+    display: flex;
+    align-items: center; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.content-with-image:hover {
+    transform: translateY(-10px); 
+}
+
+.text {
+    flex: 1; 
+    color: #333; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-right: 30px; 
+}
+
+.image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px; 
+    border-radius: 10px; 
+}
+
+.additional-section h2 {
+    color: #4FEDC2; 
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    margin-top: 0; 
+}
+
+@media (max-width: 768px) {
+    .content-with-image {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .text {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .image img {
+        max-width: 100%; 
     }
 }
