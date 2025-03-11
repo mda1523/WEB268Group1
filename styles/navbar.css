@@ -1,94 +1,100 @@
 /* ---------------------------- Logo Styles ------------------------- */
-.logo {
-    position: absolute;
-    left: 30px;
-    top: 50px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+.logo-left {
+  width: 100px; /* Resize logo */
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px; /* Add some space between the edge of the navbar and the logo */
 }
 
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, #1F677F, #4FC2D7); /* Gradient effect from #1F677F to #4FC2D7 */
+  padding: 1.5rem 0; /* Increased padding for a bigger navbar */
+}
+
+/* Logo Image Styling */
 .logo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
-/* Header Styles */
+/* Header Styles  */
 h1 {
-    color: #4FEDC2;
-    font-size: 2.5em;
-    margin: 30px 0;
+  color: #4FEDC2;
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-align: center;
 }
 
 /* ---------------------------- Navbar Styles ------------------------- */
 /*dropdown menu color and alignment */
 .dropdown-menu {
-    background-color: #4FC2D7;
-    text-align: center;
-  }
-  
-  /*dropdown menu text color*/
-  .dropdown-item {
-      color: black;
-  }
-  
-  /*Website name controls*/
-  .navbar .navbar-brand {
-    color: white;
-    padding-top: 10px;
-  
-  }
-  /*what color the hover button is*/
-  .navbar .navbar-brand:hover,
-  .navbar .navbar-brand:focus {
-    color: #4FC2D7;
-  }
-  
-  
-  /*Centers Links*/
-  .navbar-nav {
-      float: none;
-      margin: 0 auto;  
-      position: relative;
-      left: -135px; /* the width of the .navbar-brand class in negative px */
-      padding-top: 10px;
-  }
-  
-  /*Background color of navbar*/
-  .navbar {
-      background-color: #1F677F;
-  }
-  
-  /*makes the dropdown menu a block shape*/
-  .dropdown:hover>.dropdown-menu {
-      display: block;
-    }
-  
-    /*Navbar link text color and position*/
-  .navbar .navbar-nav .nav-link {
-    color: white;
-    border-radius: .25rem;
-    margin: 0 0.25em;
-  }
-  
-  
-  /* controls highlighting active tab*/
-  .navbar .navbar-nav .nav-item.active .nav-link,
-  .navbar .navbar-nav .nav-item.active .nav-link:hover,
-  .navbar .navbar-nav .nav-item.active .nav-link:focus,
-  .navbar .navbar-nav .nav-item.show .nav-link,
-  .navbar .navbar-nav .nav-item.show .nav-link:hover,
-  .navbar .navbar-nav .nav-item.show .nav-link:focus {
-    color: black;
-    background-color: #4FC2D7;
-  }
-  
-  /*Hover text color*/
-  .navbar-light .navbar-nav .nav-link:focus, 
-  .navbar-light .navbar-nav .nav-link:hover {
-      color: black !important;
-      background-color: #4FC2D7;
-  }
-  
+  background-color: #4FC2D7;
+  text-align: center;
+}
+
+/*dropdown menu text color*/
+.dropdown-item {
+  color: #0C2F3A;
+}
+
+/*Website name controls*/
+.navbar .navbar-brand {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.5em;  /* Increased size */
+}
+
+/*what color the hover button is*/
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #4FC2D7;
+}
+
+/*Centers Links*/
+.navbar-nav {
+  float: none;
+  margin: 0 auto;  
+  position: relative;
+  left: -55px; /* the width of the .navbar-brand class in negative px */
+  padding-top: 10px;
+}
+
+/*Background color of navbar*/
+.navbar {
+  background-color: #1F677F;
+  padding: 1.5rem 0; /* Increased padding for a bigger navbar */
+}
+
+/*makes the dropdown menu a block shape*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+/*Navbar link text color and position*/
+.navbar .navbar-nav .nav-link {
+  color: white;
+  border-radius: .35rem;
+  margin: 0 0.25em;
+  font-size: 1.1em; 
+  padding: 0.75rem 1.25rem; 
+}
+
+/* controls highlighting active tab*/
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #0C2F3A;
+  background-color: #4FC2D7;
+}
+
+/*Hover text color*/
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black !important;
+  background-color: #4FC2D7;
+}
