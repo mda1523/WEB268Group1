@@ -1,4 +1,4 @@
-/* ------------------- Body Section ------------------- */
+/* ------------------- General Page Styles ------------------- */
 body {
     font-family: Arial, sans-serif;
     background-color: #0C2F3A;
@@ -8,11 +8,16 @@ body {
 }
 
 h2, h3, h1 {
-    color: #4FEDC2; 
+    color: #4FEDC2;
     text-align: center;
 }
 
-/* ------------------- Scrolling Images Section ------------------- */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* ------------------- Scrolling Images Section INDEX Page ------------------- */
 .scrolling-images {
     display: flex;
     overflow-x: auto;
@@ -59,7 +64,6 @@ main {
 .inner-box h2 {
     color: #4FEDC2; 
 }
-
 
 /* Text Inside Inner Box */
 .inner-box p {
@@ -164,4 +168,104 @@ main {
 .form {
     text-align: center;
 }
-/*Veronica Style Below*/
+
+/* -------------------------------- About the team page ------------------------- */
+
+/* ------------------- Team Wrapper Box ------------------- */
+.team-wrapper {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 60px 30px;  /* Increased padding for more space inside the box */
+    border-radius: 15px;  /* Slightly rounded corners */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* Larger shadow for more emphasis */
+    max-width: 1200px;  /* Increased max width */
+    margin: 0 auto; /* Centering */
+    margin-top: 50px;
+}
+
+.team-wrapper h2 {
+    margin-bottom: 30px;  /* More space below the title */
+    font-size: 2.5em;  /* Bigger font size for the title */
+}
+
+.team-wrapper p {
+    font-size: 1.2em;  /* Increased font size for readability */
+    line-height: 1.8;
+}
+
+/* ------------------- Team Members Section ------------------- */
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  /* More space between team members */
+    flex-wrap: wrap;
+    margin-top: 60px;  /* Increased margin to separate section more */
+}
+
+/* Team Member Box */
+.team-member {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-radius: 15px; /* Larger radius for more rounded corners */
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Increased width of the team member box */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Larger shadow */
+    padding: 25px;  /* Increased padding for more content space */
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-15px); /* Increased hover effect distance */
+}
+
+/* Team Member Image */
+.team-member img {
+    width: 100%;
+    height: 250px;  /* Increased height for larger images */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Team Member Text */
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 1.8em;  /* Bigger font size for member names */
+}
+
+.team-member p {
+    font-size: 1.1em;  /* Increased font size for descriptions */
+    margin-top: 10px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px; /* More space for social links */
+}
+
+.social-links a {
+    color: #4FEDC2;
+    font-size: 1.3em;  /* Larger social links */
+    margin: 0 15px;  /* More space between social links */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%; /* Adjust width for mobile view */
+    }
+
+    .team-wrapper {
+        padding: 40px 20px;  /* Adjust padding on smaller screens */
+    }
+}

@@ -152,9 +152,11 @@ footer::after {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Adjust the footer contact section to align left */
 .footer-contact {
-    align-items: flex-start;
+    align-items: flex-start; /* Align the items to the left */
     gap: 15px;
+    text-align: left; /* Ensure text is left-aligned */
 }
 
 .footer-address,
@@ -162,7 +164,7 @@ footer::after {
 .footer-email {
     display: flex;
     gap: 8px;
-    align-items: center;
+    align-items: center; /* Adjusted to center align the icons with text */
     color: white;
     font-size: 18px;
     margin-bottom: 8px;
@@ -174,6 +176,14 @@ footer::after {
 .footer-email i {
     color: #4FEDC2;
     font-size: 20px;
+}
+
+/* Reduced font size for the address to fit in one line */
+.footer-address p {
+    font-size: 20px; /* Smaller text for the address */
+    white-space: nowrap; /* Prevent the address from wrapping */
+    overflow: hidden; /* Hide overflow if the address is too long */
+    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
 }
 
 .footer-address:hover,
