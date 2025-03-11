@@ -55,11 +55,56 @@
   </header>
   
   <body class="d-flex flex-column min-vh-100">
-<main>
-    <h2>Your Voice Matters</h2>
-    <p>We value the input of our users! If you have ideas for new features or improvements, we'd love to hear from you. Your feedback helps us grow and create the best possible experience for our community.</p>
-    <p>Whether you have suggestions for new tools or want to report an issue, please don’t hesitate to get in touch. You can contribute through our feedback form or contact our support team directly. Together, we can make our platform even better!</p>
-</main>
+    <main>
+        <!-- Feedback Page Container -->
+        <div class="feedback-section">
+            <h2>Your Voice Matters</h2>
+            <p>We value the input of our users! If you have ideas for new features or improvements, we'd love to hear from you. Your feedback helps us grow and create the best possible experience for our community.</p>
+            <p>Whether you have suggestions for new tools, want to report an issue, or share feedback about the platform, please don’t hesitate to get in touch. Together, we can make our platform even better!</p>
+
+            <!-- Feedback Form Section -->
+            <div class="feedback-form-container">
+                <h3>Leave Your Feedback</h3>
+                <form class="feedback-form">
+                    <!-- Name Input -->
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <!-- Email Input -->
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <!-- Feedback Type Selection -->
+                    <label for="feedback-type">Feedback Type:</label>
+                    <select id="feedback-type" name="feedback-type" required>
+                        <option value="feature">Feature Suggestion</option>
+                        <option value="bug">Report a Bug</option>
+                        <option value="general">General Feedback</option>
+                    </select>
+
+                    <!-- Feedback Message -->
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Feedback" required></textarea>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+
+            <!-- Contribution Options Section -->
+            <div class="contribution-options">
+                <h3>Other Ways to Contribute</h3>
+                <p>If you'd prefer to get involved in a different way, here are some other options:</p>
+                <div class="button-group">
+                    <a href="mailto:support@yourapp.com" class="contribute-btn">Contact Support</a>
+                    <a href="https://www.yourapp.com/community" class="contribute-btn">Contribute</a>
+                    <a href="https://www.yourapp.com/forum" class="contribute-btn">Report a Problem</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 
 <footer>
   <div class="footer-container">

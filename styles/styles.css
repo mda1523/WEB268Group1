@@ -293,3 +293,200 @@ main {
         font-size: 1em;  /* Adjust paragraph font size */
     }
 }
+
+
+/* ------------------------ Who We Are Page Styling ------------------------ */
+
+/* Styling the "Who We Are" section container */
+.about-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the box */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better emphasis */
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center; /* Center the text */
+}
+
+/* ------------------- Reduce space between Box and Navbar ------------------- */
+.about-section {
+    margin-top: 1px;  /* Reduces the space between the box and the navbar */
+}
+/* Heading Style */
+.about-section h2 {
+    font-size: 2.5em;
+    color: #4FEDC2;  /* Matching your teal color */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #fff; /* White text for contrast on dark background */
+    margin-bottom: 20px;
+}
+
+/* Highlighting the app name */
+.about-section strong {
+    color: #4FEDC2;  /* Highlighting the name of the app in teal */
+}
+
+/* ------------------------ Responsive Design Adjustments ------------------------ */
+@media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    /* Adjust title font size for mobile */
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    /* Adjust paragraph font size for better readability on smaller screens */
+    .about-section p {
+        font-size: 1em;
+    }
+}
+
+/* -------------------------------- CONTRIBUTE -------------------------------- */
+
+/* Feedback Section */
+.feedback-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+/* ------------------- Reduce space between Box and Navbar ------------------- */
+.feedback-section {
+    margin-top: 1px;  /* Reduces the space between the box and the navbar */
+}
+
+/* Heading Style */
+.feedback-section h2 {
+    font-size: 2.5em;
+    color: #4FEDC2; /* Matching your color scheme */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+.feedback-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 20px;
+}
+
+/* Feedback Form Container */
+.feedback-form-container {
+    background-color: #0C2F3A; /* New background color for "Leave Your Feedback" section */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Form shadow */
+    margin-bottom: 40px;
+}
+
+/* Form Heading */
+.feedback-form-container h3 {
+    font-size: 2em;
+    color: #4FEDC2; /* Teal color for contrast */
+    margin-bottom: 20px;
+}
+
+/* Form Inputs and Textarea */
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #4FEDC2; /* Teal background for button */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effects */
+.submit-btn:hover {
+    background-color: #3AC29A; /* Darker teal on hover */
+    transform: translateY(-5px);
+}
+
+/* Contribution Options Section */
+.contribution-options {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contribution-options h3 {
+    font-size: 2em;
+    color: #4FEDC2; /* Teal color */
+    margin-bottom: 20px;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Contribution Buttons */
+.contribute-btn {
+    background-color: #4FEDC2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contribute-btn:hover {
+    background-color: #3AC29A;
+    transform: translateY(-5px);
+}
+
+/* ------------------------ Responsive Design ------------------------ */
+@media (max-width: 768px) {
+    .feedback-section {
+        padding: 30px 20px;
+    }
+
+    .feedback-section h2 {
+        font-size: 2em;
+    }
+
+    .feedback-section p {
+        font-size: 1em;
+    }
+
+    .feedback-form-container {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .contribute-btn {
+        padding: 10px 20px;
+    }
+}
