@@ -184,12 +184,15 @@ main {
 
 .team-wrapper h2 {
     margin-bottom: 30px;  /* More space below the title */
-    font-size: 2.5em;  /* Bigger font size for the title */
+    font-size: 2.8em;  /* Slightly bigger font size for the title */
+    text-align: center;
 }
 
 .team-wrapper p {
-    font-size: 1.2em;  /* Increased font size for readability */
+    font-size: 1.2em;  /* Slightly smaller for better readability */
     line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* ------------------- Team Members Section ------------------- */
@@ -231,41 +234,62 @@ main {
 .team-member h3 {
     margin-top: 15px;
     font-size: 1.8em;  /* Bigger font size for member names */
+    color: #4FEDC2;
 }
 
 .team-member p {
-    font-size: 1.1em;  /* Increased font size for descriptions */
+    font-size: 1.1em;  /* Slightly increased font size for descriptions */
     margin-top: 10px;
-}
-
-/* Social Links */
-.social-links {
-    margin-top: 15px; /* More space for social links */
-}
-
-.social-links a {
-    color: #4FEDC2;
-    font-size: 1.3em;  /* Larger social links */
-    margin: 0 15px;  /* More space between social links */
-    text-decoration: none;
-}
-
-.social-links a:hover {
     color: white;
 }
 
-/* Media Queries for Responsiveness */
+/* ------------------- Reduce space between Box and Navbar ------------------- */
+.team-wrapper {
+    margin-top: 1px;  /* Reduces the space between the box and the navbar */
+}
+
+/* LinkedIn Button Style */
+.team-member .social-links a, .linkedin-button {
+    color: white;
+    background-color: #4FEDC2; /* Matching the teal color you use for team member names */
+    padding: 12px 24px;  /* Padding for button appearance */
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 1.1em;
+    text-decoration: none;
+    display: inline-block;  /* Makes the link behave like a block element */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;  /* Adds some space above the button */
+}
+
+.team-member .social-links a:hover, .linkedin-button:hover {
+    background-color: #3AC29A;  /* Slightly darker shade for hover effect */
+    transform: translateY(-5px);  /* Slightly lift the button on hover */
+}
+
+
+
+/* ------------------- Responsive Design for Smaller Screens ------------------- */
 @media (max-width: 768px) {
     .team-members {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .team-member {
         width: 90%; /* Adjust width for mobile view */
+        padding: 15px;  /* Reduced padding for mobile view */
     }
 
     .team-wrapper {
         padding: 40px 20px;  /* Adjust padding on smaller screens */
+    }
+
+    .team-wrapper h2 {
+        font-size: 2em;  /* Reduce title font size for smaller screens */
+    }
+
+    .team-wrapper p {
+        font-size: 1em;  /* Adjust paragraph font size */
     }
 }
