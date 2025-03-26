@@ -1,14 +1,21 @@
-/*Avatar Image Sizing*/
-img {
+/*Avatar Image Sizing For "Account" Page*/
+.AvatarImage {
     width: 300px;
     height:300px; 
     padding:25px;
 } 
+/*Avatar Image Sizing For "Login" Page*/
+.AvatarImageTwo {
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+}
 /*Font Sizing of Information Links ("Personal Information, Settings, Change Password")*/
 .information {
     font-size: 20px;
     padding: 40px;
 }
+/*Section Box Design For "Account" Page*/
 .box {
     background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the box */
     padding: 40px 30px;
@@ -23,6 +30,23 @@ img {
     left: 15em;
     bottom: 5em;
 }
+/*Section Box For Login Page*/
+.boxLogin {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the box */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better emphasis */
+    max-width: 1500px;
+    height: 300px;
+    margin: 0px auto;
+    text-align: center; /* Center the text */
+    position: absolute;
+    top: 48em;
+    right: 10em;
+    left: 10em;
+    bottom: 30em;
+}
+/*Sign Out Button On "Account" Page Design*/
 .SignOut {
     background-color: #d12013; 
     color: white;
@@ -38,10 +62,12 @@ img {
     width: 200px;
     position: absolute;
 }
+/*Signout Hover Design on Button*/
 .SignOut:hover {
     background-color: #941b12; 
     transform: translateY(-5px);
 }
+/*Name Button Design On "Account" Page*/
 .button1 {
     background-color: #4FEDC2; 
     color: white;
@@ -57,10 +83,12 @@ img {
     width: 250px;
     position: absolute;
 }
+/*Hover Design On Name Button*/
 .button1:hover {
     background-color: #3AC29A; 
     transform: translateY(-5px);
 }
+/*Birthday Button Design On "Account" Page*/
 .button2 {
     background-color: #4FEDC2; 
     color: white;
@@ -74,10 +102,12 @@ img {
     width: 250px;
     position: absolute;
 }
+/*Hover Design On Birthday Button*/
 .button2:hover {
     background-color: #3AC29A; 
     transform: translateY(-5px);
 }
+/*Phone Number Button Design On "Account" Page*/
 .button3 {
     background-color: #4FEDC2; 
     color: white;
@@ -91,10 +121,12 @@ img {
     width: 250px;
     position: absolute;
 }
+/*Hover Design On Phone Number Button*/
 .button3:hover {
     background-color: #3AC29A; 
     transform: translateY(-5px);
 }
+/*Country Button Design On "Account" Page*/
 .button4 {
     background-color: #4FEDC2; 
     color: white;
@@ -108,10 +140,12 @@ img {
     width: 250px;
     position: absolute;
 }
+/*Hover Design On Country Button*/
 .button4:hover {
     background-color: #3AC29A; 
     transform: translateY(-5px);
 }
+/*Language Button Design On "Account" Page*/
 .button5 {
     background-color: #4FEDC2; 
     color: white;
@@ -125,14 +159,51 @@ img {
     width: 250px;
     position: absolute;
 }
+/*Hover Design On Language Button*/
 .button5:hover {
     background-color: #3AC29A; 
     transform: translateY(-5px);
 }
-h4 {
-    vertical-align: center;
-    text-align: center;
-}
+/*Personal Information Link Design*/
 .default {
     color: #4FEDC2;
+}
+/*Username Label Design*/
+input[type=text] {
+    width: 80%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+/*Password Label Design*/
+input[type=password] {
+    width: 80%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+/*Submit Button Design*/
+button[type=submit] {
+    background-color: #4FEDC2; 
+    color: white;
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+/*Submit Button Hover Design*/
+button[type=submit]:hover {
+    background-color: #3AC29A; 
+    transform: translateY(-5px);
+}
+/*Forgot Password Link Design*/
+.forgotPassword {
+    float: right;
+    color: #4FEDC2;
+    cursor: pointer;
 }
