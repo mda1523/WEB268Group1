@@ -1,0 +1,129 @@
+/* ------------------- General Search Page Styles ------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0C2F3A;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #4FEDC2;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* ------------------- Search Bar ------------------- */
+.search-bar {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ------------------- Business Profile Cards ------------------- */
+.business-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    max-width: 400px; /* Set max-width for the business cards */
+    margin-left: auto; /* Center align the card */
+    margin-right: auto; /* Center align the card */
+}
+
+.business-card:hover {
+    transform: scale(1.05);
+}
+
+.business-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #4FEDC2;
+}
+
+.review {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.description {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* ------------------- Grid Layout for Business Profiles ------------------- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center business cards within the row */
+    gap: 20px; /* Add space between the cards */
+    padding: 0 20px; /* Add padding to prevent cards from touching the edges of the page */
+}
+
+.col-md-4 {
+    flex: 1 1 30%; /* Keep 3 items per row */
+    max-width: 30%;
+}
+
+@media (max-width: 768px) {
+    /* For mobile or smaller screens */
+    .col-md-4 {
+        flex: 1 1 100%; /* Stack business cards vertically on small screens */
+        max-width: 100%;
+    }
+    .business-card {
+        margin: 10px;
+    }
+    
+    .search-bar input {
+        padding: 8px;
+    }
+}
+
+/* Customizing the search bar */
+.search-bar {
+    position: relative;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group .form-control {
+    border-radius: 20px 0 0 20px; /* Rounded corners for the input */
+}
+
+.input-group-append .input-group-text {
+    background-color: #4FEDC2; /* Icon background color */
+    border-radius: 0 20px 20px 0; /* Rounded corners for the icon part */
+    cursor: pointer;
+}
+
+.input-group-text i {
+    color: white; /* White color for the search icon */
+}
+
+.form-control {
+    padding-right: 35px; /* Make room for the search icon */
+}
