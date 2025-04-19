@@ -207,3 +207,69 @@ button[type=submit]:hover {
     color: #4FEDC2;
     cursor: pointer;
 }
+.boxSignup {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the box */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better emphasis */
+    max-width: 1500px;
+    margin: 0px auto;
+    text-align: center; /* Center the text */
+    position: absolute;
+    top: 15em;
+    right: 10em;
+    left: 10em;
+    bottom: 5em;  
+}
+.formBox {
+    background-color: #0C2F3A; /* New background color for "Leave Your Feedback" section */
+    padding: 130px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Form shadow */
+    margin-bottom: 80px;
+}
+input[type=email] {
+    width: 80%;
+    padding: 5px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.signUp {
+    background-color: #4FEDC2; 
+    color: white;
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 30em;
+    right: 40em; 
+}
+.signUp:hover {
+    background-color: #3AC29A; 
+    transform: translateY(-5px);
+}
+.reviewsBox {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the box */
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better emphasis */
+    max-width: 2500px;
+    margin: 0px auto;
+    text-align: center; /* Center the text */
+    position: absolute;
+    top: 15em;
+    right: 10em;
+    left: 10em;
+    bottom: .10em;  
+}
+.usersBox {
+    background-color: #0C2F3A; /* New background color for "Leave Your Feedback" section */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Form shadow */
+    margin-bottom: 80px; 
+}
