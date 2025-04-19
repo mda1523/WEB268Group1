@@ -60,7 +60,7 @@
     top: 20%;
     left: 80%;
     width: 200px;
-    position: absolute;
+    /*position: absolute;*/
 }
 /*Signout Hover Design on Button*/
 .SignOut:hover {
